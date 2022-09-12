@@ -1,6 +1,6 @@
 let modInfo = {
-	name: "The X Tree",
-	id: "0",
+	name: "The Twenty Million Prestige Tree",
+	id: "twenty million",
 	author: "DracoM2008",
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
@@ -13,14 +13,14 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.00",
-	name: "Literally nothing",
+	num: "20,000,000",
+	name: "Twenty Million",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+	<h3>v20,000,000</h3><br>
+		- Added three upgrades.<br>
+		- Made the win condition e20,000,000 points.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -59,7 +59,7 @@ var displayThings = [
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.points.gte(new Decimal("e280000000"))
+	return player.points.gte(new Decimal("e20000000"))
 }
 
 
