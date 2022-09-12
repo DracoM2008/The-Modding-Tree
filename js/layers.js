@@ -28,12 +28,12 @@ addLayer("p", {
     layerShown(){return true},
     upgrades: {
         11: {
-            title: "The First Upgrade",
+            title: "The Beginning",
             description: "Multiply your point production by 20,000,000.",
             cost: new Decimal("1")
         },
         12: {
-            title: "The Second Upgrade",
+            title: "A Boost",
             description: "Prestige points boost point production.",
             cost: new Decimal("20000"),
             effect() {
@@ -42,7 +42,7 @@ addLayer("p", {
             effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }, // Add formatting to the effect
         },
         13: {
-            title: "The Third Upgrade",
+            title: "This Upgrade Costs Twenty Million",
             description: "Points boost prestige point gain.",
             cost: new Decimal("20000000"),
             effect() {
