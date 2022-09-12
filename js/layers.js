@@ -7,7 +7,7 @@ addLayer("p", {
 		points: new Decimal(0),
     }},
     color: "#EF1F3F",
-    requires: new Decimal(10), // Can be a function that takes requirement increases into account
+    requires: new Decimal(20000000), // Can be a function that takes requirement increases into account
     resource: "prestige points", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
@@ -29,13 +29,13 @@ addLayer("p", {
     upgrades: {
         11: {
             title: "The First Upgrade",
-            description: "Double your point production.",
+            description: "Multiply your point production by 20,000,000.",
             cost: new Decimal("1")
         },
         12: {
             title: "The Second Upgrade",
             description: "Prestige points boost point production.",
-            cost: new Decimal("2"),
+            cost: new Decimal("20000"),
             effect() {
                 return player[this.layer].points.add(1)
             },
@@ -44,7 +44,7 @@ addLayer("p", {
         13: {
             title: "The Third Upgrade",
             description: "Points boost prestige point gain.",
-            cost: new Decimal("5"),
+            cost: new Decimal("20000000"),
             effect() {
                 return player.points.add(1)
             },
